@@ -1,0 +1,367 @@
+.pricing {
+  // .pricing-img-1 {
+  //   height: 49rem;
+  // }
+
+  p {
+    margin-bottom: 0 !important;
+  }
+
+  .invite {
+    grid-column: 1 / -1;
+    padding: 4rem 12rem;
+    color: $color-pure-white;
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 48em) {
+      padding: 4rem 4rem;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    background-image: url(../assets/shared/desktop/bg-beta.jpg);
+    background-size: cover;
+    background-position: center;
+
+    h1 {
+      width: 40rem;
+    }
+
+    svg path {
+      stroke: $color-pure-white;
+    }
+  }
+
+  .feature-text {
+    @media only screen and (max-width: 48em) {
+      padding: 9rem;
+    }
+
+    @media only screen and (max-width: 23.4em) {
+      padding: 9rem 6rem !important;
+    }
+
+    .heading-1 {
+      margin-bottom: 1.8rem;
+    }
+
+    p {
+      margin-bottom: 5rem;
+    }
+  }
+
+  .toggle-box {
+    display: flex;
+    margin-bottom: 3rem;
+    gap: 2rem;
+
+    .monthly,
+    .yearly {
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 2.3rem;
+    }
+
+    .yearly {
+      opacity: 60%;
+    }
+
+    .outer-toggle {
+      width: 5rem;
+      border-radius: 100px;
+      background-color: #dfdfdf;
+      padding: 3px;
+    }
+
+    .inner-toggle {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background-color: $color-pure-black;
+    }
+  }
+
+  .pricing-img-1 {
+    width: 100%;
+    grid-column: 6 / -1;
+    object-fit: cover;
+    height: 100%;
+
+    //768px Tablet
+    @media only screen and (max-width: 48em) {
+      grid-column: 9 / -1;
+      grid-row: 2;
+      content: url("../assets/pricing/tablet/hero.jpg");
+    }
+
+    //375px Mobile
+    @media only screen and (max-width: 37.5em) {
+      grid-column: 1 / -1;
+      content: url("../assets/pricing/mobile/hero.jpg");
+    }
+  }
+
+  .toggle {
+    grid-column: 1 / -1;
+  }
+
+  .price-section {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10rem 12rem 0;
+
+    @media only screen and (max-width: 62.5em) {
+      padding: 9rem 4rem 0;
+    }
+
+    @media only screen and (max-width: 48em) {
+      padding: 9rem 6rem 0;
+    }
+  }
+
+  .price-box {
+    display: grid;
+    // width: 111rem;
+    width: 100%;
+    align-items: center;
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
+    @media only screen and (max-width: 62.5em) {
+      gap: 2rem;
+    }
+
+    @media only screen and (max-width: 48em) {
+      grid-template-columns: 1fr;
+    }
+
+    @media only screen and (max-width: 23.4em) {
+      gap: 4rem;
+    }
+  }
+
+  .basic,
+  .business {
+    height: 40.7rem;
+    // width: 35rem;
+    background-color: #f5f5f5;
+    padding-top: 5rem !important;
+  }
+
+  .pro {
+    height: 47rem;
+    // width: 35rem;
+    color: $color-pure-white;
+    background-color: $color-pure-black;
+    padding-top: 8rem !important;
+
+    @media only screen and (max-width: 48em) {
+      padding-top: 5rem !important;
+    }
+
+    .btn {
+      background-color: $color-pure-white;
+      color: $color-pure-black;
+    }
+
+    .btn:hover {
+      background-color: $color-light-grey;
+    }
+  }
+
+  .basic,
+  .business,
+  .pro {
+    padding: 3rem;
+    text-align: center;
+
+    @media only screen and (max-width: 48em) {
+      height: 27rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, min-content);
+      text-align: start;
+    }
+
+    @media only screen and (max-width: 23.4em) {
+      height: 40.7rem;
+      display: block;
+      text-align: center;
+      padding: 6rem;
+    }
+  }
+
+  .price-num {
+    @media only screen and (max-width: 48em) {
+      grid-column: 2 / 3;
+      grid-row: 1 / -1;
+      text-align: end;
+    }
+
+    @media only screen and (max-width: 23.4em) {
+      text-align: center;
+    }
+  }
+
+  .price-info {
+    opacity: 60%;
+    margin-bottom: 4rem !important;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .heading-3 {
+    margin-bottom: 2rem;
+  }
+
+  .price {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 0.417rem;
+    line-height: 4.8rem;
+  }
+
+  span {
+    display: block;
+  }
+
+  .per {
+    opacity: 60%;
+  }
+
+  .compare-section {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 12rem 0;
+
+    @media only screen and (max-width: 37.5em) {
+      display: none;
+    }
+  }
+
+  table {
+    width: 600px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    font-size: 1.2rem;
+    line-height: 1.562rem;
+    border-collapse: collapse;
+  }
+
+  tbody td,
+  tbody th {
+    border-bottom: 1px solid #dfdfdf;
+  }
+
+  thead th {
+    border-bottom: 1px solid #000;
+  }
+
+  th,
+  td {
+    padding: 1.5rem 2rem;
+  }
+
+  th,
+  td {
+    text-align: start;
+  }
+
+  th {
+    text-transform: uppercase;
+  }
+
+  .price-section .btn {
+    width: 100%;
+    margin-top: 4rem;
+
+    @media only screen and (max-width: 48em) {
+      grid-column: 1 / 2;
+      margin-top: 0;
+    }
+
+    @media only screen and (max-width: 23.4em) {
+      margin-top: 5rem;
+    }
+  }
+
+  .compare-mobile {
+    grid-column: 1 / -1;
+    padding: 8rem 6rem;
+    display: none;
+
+    @media only screen and (max-width: 37.5em) {
+      display: block;
+    }
+
+    .heading-4 {
+      text-transform: uppercase;
+      grid-column: 1 / -1;
+      padding: 1.6rem 0;
+    }
+
+    .heading-5 {
+      margin-bottom: 1rem;
+    }
+
+    .black-line,
+    .grey-line {
+      grid-column: 1 / -1;
+    }
+
+    .grey-line line {
+      stroke: #cccbcb;
+    }
+  }
+
+  .compare-mob-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  svg[width="18"] {
+    margin-bottom: 2rem;
+  }
+
+  .check-7 {
+    grid-column: 2 / 3;
+  }
+
+  .check-8 {
+    grid-column: 3 / 4;
+  }
+
+  .check-9 {
+    grid-column: 2 / 3;
+  }
+
+  .check-10 {
+    grid-column: 3 / 4;
+  }
+
+  .check-11 {
+    grid-column: 3 / 4;
+  }
+
+  .check-12 {
+    grid-column: 3 / 4;
+  }
+
+  .check-13 {
+    grid-column: 3 / 4;
+  }
+
+  .check-14 {
+    grid-column: 3 / 4;
+  }
+}

@@ -1,0 +1,201 @@
+.date {
+  font-size: 1.3rem;
+  line-height: 1.693rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.story-hero {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color-pure-black, 0),
+      rgba($color-pure-black, 0.7)
+    ),
+    url(../assets/stories/desktop/moon-of-appalacia.jpg);
+  background-size: cover;
+  background-position: top;
+  height: 64rem;
+
+  @media only screen and (max-width: 48em) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba($color-pure-black, 0),
+        rgba($color-pure-black, 0.7)
+      ),
+      url(../assets/stories/tablet/moon-of-appalacia.jpg);
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    height: 31.7rem;
+  }
+}
+
+.story-text {
+  padding: 9rem;
+  grid-row: 2 / 3;
+  grid-column: 1 / 6;
+
+  display: grid;
+  align-items: center;
+  justify-items: start;
+  align-content: center;
+  background-color: transparent;
+  color: $color-pure-white;
+
+  //1000
+  @media only screen and (max-width: 62.5em) {
+    padding: 5rem;
+  }
+
+  @media only screen and (max-width: 48em) {
+    padding: 4rem;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    padding: 6rem;
+    background-color: $color-pure-black;
+  }
+
+  @media only screen and (max-width: 23.4em) {
+    padding: 4rem;
+  }
+
+  .heading-1 {
+    margin-bottom: 1.8rem;
+  }
+
+  p {
+    margin-bottom: 5rem;
+  }
+
+  .arrow-svg path {
+    stroke: $color-pure-white;
+  }
+
+  .home-info {
+    opacity: 70%;
+  }
+}
+
+.story-text {
+  .date-author {
+    transform: translateY(1rem);
+  }
+
+  .hero-date {
+    opacity: 70%;
+    margin-right: 0.4rem;
+  }
+}
+
+.card-5 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color-pure-black, 0),
+      rgba($color-pure-black, 0.7)
+    ),
+    url(../assets/stories/desktop/world-tour.jpg);
+}
+
+.card-6 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color-pure-black, 0),
+      rgba($color-pure-black, 0.7)
+    ),
+    url(../assets/stories/desktop/unforeseen-corners.jpg);
+}
+
+.card-7 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color-pure-black, 0),
+      rgba($color-pure-black, 0.7)
+    ),
+    url(../assets/stories/desktop/king-on-africa.jpg);
+}
+
+.card-8 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color-pure-black, 0),
+      rgba($color-pure-black, 0.7)
+    ),
+    url(../assets/stories/desktop/trip-to-nowhere.jpg);
+}
+
+.card-9 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color-pure-black, 0),
+      rgba($color-pure-black, 0.7)
+    ),
+    url(../assets/stories/desktop/rage-of-the-sea.jpg);
+}
+
+.card-10 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color-pure-black, 0),
+      rgba($color-pure-black, 0.7)
+    ),
+    url(../assets/stories/desktop/running-free.jpg);
+}
+
+.card-11 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color-pure-black, 0),
+      rgba($color-pure-black, 0.7)
+    ),
+    url(../assets/stories/desktop/behind-the-waves.jpg);
+}
+
+.card-12 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color-pure-black, 0),
+      rgba($color-pure-black, 0.7)
+    ),
+    url(../assets/stories/desktop/calm-waters.jpg);
+}
+
+.card-13 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color-pure-black, 0),
+      rgba($color-pure-black, 0.7)
+    ),
+    url(../assets/stories/desktop/milky-way.jpg);
+}
+
+.card-14 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color-pure-black, 0),
+      rgba($color-pure-black, 0.7)
+    ),
+    url(../assets/stories/desktop/somwarpet.jpg);
+}
+
+.card-15 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color-pure-black, 0),
+      rgba($color-pure-black, 0.7)
+    ),
+    url(../assets/stories/desktop/land-of-dreams.jpg);
+}
+
+.card-16 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color-pure-black, 0),
+      rgba($color-pure-black, 0.7)
+    ),
+    url(../assets/stories/desktop/mountains.jpg);
+}

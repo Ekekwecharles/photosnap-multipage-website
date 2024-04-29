@@ -1,0 +1,41 @@
+$color-pure-black: #000;
+$color-light-grey: #dfdfdf;
+$color-pure-white: #fff;
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  //600px Mobile
+  @media only screen and (max-width: 37.5em) {
+    font-size: 50%;
+  }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-family: "DM Sans";
+  position: relative;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  // @media only screen and (max-width: 23.4em) {
+  //   grid-template-columns: 1fr;
+  // }
+
+  @media only screen and (max-width: 37.5em) {
+    grid-template-columns: 1fr;
+  }
+}

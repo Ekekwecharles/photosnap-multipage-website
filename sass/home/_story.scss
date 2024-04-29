@@ -1,0 +1,252 @@
+.create,
+.beautiful,
+.designed {
+  padding: 9rem;
+
+  display: grid;
+  align-items: center;
+  justify-items: start;
+  align-content: center;
+
+  //1000
+  @media only screen and (max-width: 62.5em) {
+    padding: 5rem;
+  }
+
+  @media only screen and (max-width: 48em) {
+    padding: 9rem;
+  }
+
+  @media only screen and (max-width: 23.4em) {
+    padding: 5rem;
+  }
+
+  .heading-1 {
+    margin-bottom: 1.8rem;
+  }
+
+  p {
+    margin-bottom: 5rem;
+  }
+}
+
+.create {
+  grid-column: 1 / 6;
+
+  background-color: $color-pure-black;
+  color: $color-pure-white;
+
+  .arrow-svg path {
+    stroke: $color-pure-white;
+  }
+
+  @media only screen and (max-width: 48em) {
+    grid-column: 1 / 9;
+  }
+
+  //375px
+  @media only screen and (max-width: 37.5em) {
+    grid-column: 1 / -1;
+  }
+
+  .home-info {
+    opacity: 70%;
+  }
+}
+
+.img-1 {
+  width: 100%;
+  grid-column: 6 / -1;
+  object-fit: cover;
+  height: 100%;
+
+  //768px Tablet
+  @media only screen and (max-width: 48em) {
+    grid-column: 9 / -1;
+    grid-row: 2;
+    content: url("../assets/home/tablet/create-and-share.jpg");
+  }
+
+  //375px Mobile
+  @media only screen and (max-width: 37.5em) {
+    grid-column: 1 / -1;
+    content: url("../assets/home/mobile/create-and-share.jpg");
+  }
+}
+
+.img-2 {
+  width: 100%;
+  grid-column: 1 / 8;
+  object-fit: cover;
+  height: 100%;
+
+  //768px Tablet
+  @media only screen and (max-width: 48em) {
+    grid-column: 1 / 5;
+    content: url("../assets/home/tablet/beautiful-stories.jpg");
+  }
+
+  //375px Mobile
+  @media only screen and (max-width: 37.5em) {
+    grid-column: 1 / -1;
+    content: url("../assets/home/mobile/beautiful-stories.jpg");
+  }
+}
+
+.beautiful {
+  grid-column: 8 / -1;
+
+  //768px
+  @media only screen and (max-width: 48em) {
+    grid-column: 5 / -1;
+  }
+
+  //375px Mobile
+  @media only screen and (max-width: 37.5em) {
+    grid-column: 1 / -1;
+  }
+}
+
+.designed {
+  grid-column: 1 / 6;
+
+  //768px Tablet
+  @media only screen and (max-width: 48em) {
+    grid-column: 1 / 9;
+  }
+
+  //375px Mobile
+  @media only screen and (max-width: 37.5em) {
+    grid-column: 1 / -1;
+  }
+}
+
+.img-3 {
+  grid-column: 6 / -1;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+
+  //768px Tablet
+  @media only screen and (max-width: 48em) {
+    grid-column: 9 / -1;
+    content: url("../assets/home/tablet/designed-for-everyone.jpg");
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    grid-column: 1 / -1;
+    grid-row: 6;
+    content: url("../assets/home/mobile/designed-for-everyone.jpg");
+  }
+}
+
+.card {
+  min-height: 50rem;
+  padding: 3rem;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  align-content: end;
+  color: $color-pure-white;
+  cursor: pointer;
+  transition: transform 0.2s ease-out;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 6px;
+    background-image: linear-gradient(to bottom, #5a77ff, #bc7198, #ffc593);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .arrow-svg path {
+    stroke: $color-pure-white;
+  }
+
+  .story-author {
+    font-size: 1.3rem;
+    line-height: 1.693rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  hr {
+    border: none;
+    height: 1px;
+    background-color: #fff;
+  }
+
+  .line-svg line {
+    stroke: $color-pure-white;
+  }
+
+  .line-svg {
+    margin: 1rem 0 1.5rem;
+  }
+}
+
+.card:hover {
+  transform: translateY(-2.5rem);
+  width: 100%;
+}
+
+.card:hover::after {
+  opacity: 1;
+}
+
+.card-box {
+  grid-column: 1 / -1;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+
+  @media only screen and (max-width: 37.5em) {
+    grid-template-columns: repeat(auto-fit, 1fr);
+  }
+}
+
+.card-1 {
+  // grid-column: 1 / 4;
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color-pure-black, 0),
+      rgba($color-pure-black, 0.7)
+    ),
+    url(../assets/stories/desktop/mountains.jpg);
+}
+
+.card-2 {
+  // grid-column: 4 / 7;
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color-pure-black, 0),
+      rgba($color-pure-black, 0.7)
+    ),
+    url(../assets/stories/desktop/cityscapes.jpg);
+}
+
+.card-3 {
+  // grid-column: 7 / 10;
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color-pure-black, 0),
+      rgba($color-pure-black, 0.7)
+    ),
+    url(../assets/stories/desktop/18-days-voyage.jpg);
+}
+
+.card-4 {
+  // grid-column: 10 / 13;
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color-pure-black, 0),
+      rgba($color-pure-black, 0.7)
+    ),
+    url(../assets/stories/desktop/architecturals.jpg);
+}

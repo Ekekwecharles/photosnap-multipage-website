@@ -1,0 +1,14 @@
+{
+  "name": "photosnap-websitge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:css": "node-sass sass/main.scss styles/style.css -w"
+  },
+  "author": "snow designs",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

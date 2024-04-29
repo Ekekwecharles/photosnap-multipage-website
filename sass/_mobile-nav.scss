@@ -1,0 +1,55 @@
+.nav {
+  text-align: center;
+  // flex-direction: column;
+  padding: 4rem;
+  position: absolute;
+  background-color: $color-pure-white;
+  top: 6rem;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+
+  @media only screen and (min-width: 37.5em) {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .pages {
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+    margin-bottom: 2.5rem;
+
+    a {
+      text-decoration: none;
+      color: $color-pure-black;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      line-height: 1.953rem;
+      letter-spacing: 0.25rem;
+      font-weight: 700;
+      font-family: inherit;
+    }
+  }
+
+  .btn {
+    margin-top: 2.5rem;
+    padding: 2.3rem;
+    font-size: 1.5rem;
+    line-height: 1.953rem;
+    letter-spacing: 0.25;
+    display: block;
+    width: 100%;
+  }
+
+  svg line {
+    stroke: #ccc;
+  }
+}
+
+.checkbox:checked ~ .nav {
+  // display: block;
+  opacity: 1;
+  visibility: visible;
+}

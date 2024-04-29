@@ -1,0 +1,99 @@
+.header {
+  grid-column: 1 / -1;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 1.3rem 0;
+
+  //375px Mobile
+  @media only screen and (max-width: 37.5em) {
+    justify-content: space-between;
+    padding: 1.5rem 2.5rem;
+  }
+
+  img {
+    display: block;
+  }
+
+  .pages {
+    display: flex;
+    gap: 4rem;
+
+    @media only screen and (max-width: 48em) {
+      gap: 2rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: $color-pure-black;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      line-height: 1.562rem;
+      letter-spacing: 0.2rem;
+      font-weight: 700;
+      font-family: inherit;
+    }
+
+    //375px Mobile
+    @media only screen and (max-width: 37.5em) {
+      display: none;
+    }
+  }
+
+  .btn {
+    //375px Mobile
+    @media only screen and (max-width: 37.5em) {
+      display: none;
+    }
+  }
+
+  .mobile-nav {
+    display: none;
+
+    @media only screen and (max-width: 37.5em) {
+      display: block;
+    }
+  }
+
+  .checkbox {
+    display: none;
+  }
+
+  label {
+    height: 3rem;
+    width: 4rem;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+    //375px Mobile
+    @media only screen and (max-width: 37.5em) {
+      display: flex;
+    }
+  }
+
+  .open {
+    height: 1rem;
+    width: 3.3rem;
+    display: flex;
+  }
+
+  .close {
+    height: 2rem;
+    width: 2.5rem;
+  }
+
+  .checkbox-label .close {
+    display: none;
+  }
+
+  .checkbox:checked + .checkbox-label .open {
+    display: none;
+  }
+
+  .checkbox:checked + .checkbox-label .close {
+    display: inline-block;
+  }
+}

@@ -1,0 +1,56 @@
+.btn {
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  padding: 1rem 2rem;
+  font-family: inherit;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  line-height: 1.562rem;
+}
+
+.btn-1 {
+  background-color: $color-pure-black;
+  color: $color-pure-white;
+}
+
+.btn-1:hover {
+  background-color: $color-light-grey;
+  color: $color-pure-black;
+}
+
+.btn-2 {
+  color: inherit;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+
+  span {
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s;
+  }
+}
+
+.btn-2:hover span {
+  border-bottom: 1px solid currentColor;
+}
+
+.btn-4 {
+  color: inherit;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+
+  span {
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s;
+  }
+}
+
+.btn-4:hover span {
+  border-bottom: 1px solid currentColor;
+}

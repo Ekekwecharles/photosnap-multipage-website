@@ -1,0 +1,76 @@
+.features {
+  .feature-img-1 {
+    height: 49rem;
+  }
+
+  p {
+    margin-bottom: 0 !important;
+  }
+
+  .invite {
+    grid-column: 1 / -1;
+    padding: 4rem 12rem;
+    color: $color-pure-white;
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 48em) {
+      padding: 4rem 4rem;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    background-image: url(../assets/shared/desktop/bg-beta.jpg);
+    background-size: cover;
+    background-position: center;
+
+    h1 {
+      width: 40rem;
+    }
+
+    svg path {
+      stroke: $color-pure-white;
+    }
+  }
+
+  .feature-text {
+    @media only screen and (max-width: 48em) {
+      padding: 9rem;
+    }
+
+    @media only screen and (max-width: 23.4em) {
+      padding: 9rem 6rem !important;
+    }
+
+    .heading-1 {
+      margin-bottom: 1.8rem;
+    }
+
+    p {
+      margin-bottom: 5rem;
+    }
+  }
+
+  .feature-img-1 {
+    width: 100%;
+    grid-column: 6 / -1;
+    object-fit: cover;
+    height: 100%;
+
+    //768px Tablet
+    @media only screen and (max-width: 48em) {
+      grid-column: 9 / -1;
+      grid-row: 2;
+      content: url("../assets/features/tablet/hero.jpg");
+    }
+
+    //375px Mobile
+    @media only screen and (max-width: 37.5em) {
+      grid-column: 1 / -1;
+      content: url("../assets/features/mobile/hero.jpg");
+    }
+  }
+}
