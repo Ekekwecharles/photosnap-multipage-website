@@ -149,14 +149,14 @@
 
   .basic,
   .business {
-    height: 40.7rem;
+    min-height: 40.7rem;
     // width: 35rem;
     background-color: #f5f5f5;
     padding-top: 5rem !important;
   }
 
   .pro {
-    height: 47rem;
+    min-height: 47rem;
     // width: 35rem;
     color: $color-pure-white;
     background-color: $color-pure-black;
@@ -183,7 +183,7 @@
     text-align: center;
 
     @media only screen and (max-width: 48em) {
-      height: 27rem;
+      min-height: 27rem;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: repeat(3, min-content);

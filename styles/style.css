@@ -570,12 +570,12 @@ body {
 
 .pricing .basic,
 .pricing .business {
-  height: 40.7rem;
+  min-height: 40.7rem;
   background-color: #f5f5f5;
   padding-top: 5rem !important; }
 
 .pricing .pro {
-  height: 47rem;
+  min-height: 47rem;
   color: #fff;
   background-color: #000;
   padding-top: 8rem !important; }
@@ -597,7 +597,7 @@ body {
     .pricing .basic,
     .pricing .business,
     .pricing .pro {
-      height: 27rem;
+      min-height: 27rem;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: repeat(3, min-content);
